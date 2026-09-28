@@ -8,6 +8,7 @@ import HomePage from "@/pages/home";
 import AdminEnrollmentsPage from "@/pages/admin/enrollments";
 
 import "./index.css";
+import AdminCoursesPage from "./pages/admin/courses";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "admin/enrollments", element: <AdminEnrollmentsPage /> },
+      { path: "admin/courses", element: <AdminCoursesPage/>},
     ],
   },
 ]);

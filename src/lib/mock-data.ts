@@ -1,5 +1,4 @@
-import type { Student, Course, Enrollment } from "@/lib/types";
-
+import type { Student , Course , Enrollment  } from "./types";
 export const students: Student[] = [
   {
     studentId: "650610001",
@@ -25,17 +24,17 @@ export const students: Student[] = [
 
 export const courses: Course[] = [
   {
-    courseId: "261207",
+    courseCode: "261207",
     courseTitle: "Basic Computer Engineering Lab",
     instructors: ["Dome", "Chanadda"],
   },
   {
-    courseId: "261497",
+    courseCode: "261497",
     courseTitle: "Full Stack Development",
     instructors: ["Dome", "Nirand", "Chanadda"],
   },
   {
-    courseId: "269101",
+    courseCode: "269101",
     courseTitle: "Introduction to Information Systems and Network Engineering",
     instructors: ["KENNETH COSH"],
   },
@@ -47,6 +46,7 @@ export const enrollments: Enrollment[] = [
   { studentId: "650610003", courseId: "269101" },
   { studentId: "650610003", courseId: "261497" },
 ];
+
 
 export const CURRENT_STUDENT_ID = "650610002";
 export const currentStudent = students.find(
