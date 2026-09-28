@@ -1,24 +1,25 @@
-import type { Student , Course , Enrollment  } from "./types";
+import type { Student , Course , Enrollment } from "./types";
 export const students: Student[] = [
   {
     studentId: "650610001",
     firstName: "Matt",
     lastName: "Damon",
     program: "CPE",
+    enrolledCourses: []
   },
   {
     studentId: "650610002",
     firstName: "Cillian",
     lastName: "Murphy",
     program: "CPE",
-    courses: ["261207", "261497"],
+    enrolledCourses: ["261207", "261497"],
   },
   {
     studentId: "650610003",
     firstName: "Emily",
     lastName: "Blunt",
     program: "ISNE",
-    courses: ["269101", "261497"],
+    enrolledCourses: ["269101", "261497"],
   },
 ];
 
@@ -46,9 +47,3 @@ export const enrollments: Enrollment[] = [
   { studentId: "650610003", courseId: "269101" },
   { studentId: "650610003", courseId: "261497" },
 ];
-
-
-export const CURRENT_STUDENT_ID = "650610002";
-export const currentStudent = students.find(
-  (s) => s.studentId === CURRENT_STUDENT_ID,
-)!;
